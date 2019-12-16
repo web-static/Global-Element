@@ -22,7 +22,9 @@ function login_check() {
     status = sessionStorage.getItem("status");
 
     if (status != "ok") {
-        window.location.href = ("https://uiap.iisjy.cn/login.html?url="+window.location.href);
+        var lasturl = window.location.href;
+        for()
+        window.location.href = ("https://uiap.iisjy.cn/login.html?url="+encodeURIComponent(window.location.href));
     }
 }
 
