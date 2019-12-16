@@ -23,7 +23,6 @@ function login_check() {
 
     if (status != "ok") {
         var lasturl = window.location.href;
-        for()
         window.location.href = ("https://uiap.iisjy.cn/login.html?url="+encodeURIComponent(window.location.href));
     }
 }
