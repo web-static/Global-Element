@@ -19,8 +19,27 @@
 	   </div>
    </div>
 </div>
+
+
+<!-- ===ustc test=== -->
 <iframe hidden id="ustctest"></iframe>
 <script>
 	var domain = document.domain;
 	document.getElementById('ustctest').src=("https://ipv6.ustc.edu.cn/onlinecheck.php?hostname="+domain+"&cmd=%E5%BC%80%E5%A7%8B%E6%B5%8B%E8%AF%95");
+</script>
+
+<!-- ===Baidu Push=== -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
