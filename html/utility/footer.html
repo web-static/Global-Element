@@ -3,7 +3,7 @@
 	   <div class="col-12">
 		   <div class="footer-wrap text-center">
 			   <div class="footer-tag">贝塔西塔</div>
-			   <div class="footer-tag">Copyleft&nbsp;2019&nbsp;|&nbsp;No&nbsp;Rights&nbsp;Reserved</div>
+			   <div class="footer-tag">Copyleft&nbsp;<span id="this_year"></span>&nbsp;|&nbsp;No&nbsp;Rights&nbsp;Reserved</div>
 			   <div class="footer-tag">
 				   <a target="_blank" href="http://beian.miit.gov.cn/">
 					   <img width="20px" height="20px" src="https://static.iisjy.cn/images/miit.png" />
@@ -20,6 +20,11 @@
    </div>
 </div>
 
+<!-- === set year in footer === -->
+<script>
+	var now = new Date();
+	document.getElementById("this_year").value = now.getFullYear(); //得到年份
+</script>
 
 <!-- ===ustc test=== -->
 <iframe hidden id="ustctest"></iframe>
