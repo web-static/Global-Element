@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	var URL = new URL(window.location.href).searchParams.get('url');
+	if(URL!=null){
+		document.title=URL;
+		window.location.href = URL;
+	}else{
+		window.location.href = "https://www.iisjy.cn";
+	}
+</script>
+</html>
