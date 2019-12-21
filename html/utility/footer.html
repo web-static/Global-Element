@@ -22,9 +22,8 @@
 
 <!-- === set year in footer === -->
 <script>
-	AA = new Date();
-	alert("现在是"+AA);
-	document.getElementById("this_year").value = AA.getFullYear(); //得到年份
+	var now = new Date();
+	document.getElementById("this_year").textContent= now.getFullYear(); //得到年份
 </script>
 
 <!-- ===ustc test=== -->
